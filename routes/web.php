@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SampleController;
 use App\Http\Controllers\SecondController;
+use App\Http\Controllers\WelcomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,4 @@ Route::get('/', function () {
 
 Route::resource('cristian', SampleController::class);
 Route::resource('karl', SecondController::class);
+Route::resource('welcome', WelcomeController::class);
